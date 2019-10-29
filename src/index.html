@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Music Heaven</title>
+    <title>Wax Attack</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lora|Roboto|Vollkorn&display=swap"
       rel="stylesheet"
@@ -14,20 +14,21 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <nav class="navbar">
       <div class="navbar__brandbox">
         <div class="navbar__brand">
-          <p>MUSIC HEAVEN</p>
+          <p>WAX ATTACK</p>
         </div>
         <div class="navbar__logo">
           <img src="./ressources/logo.png" alt="brand logo" />
         </div>
       </div>
-      <div class="navbar__sectionsbox">
-        <div class="navbar__Vinyl">Vinyl</div>
-        <div class="navbar__Hardware">Hardware</div>
-        <div class="navbar__aboutUs">About us</div>
-        <div class="navbar__cart">
+
+      <ul class="navbar__sectionsbox">
+        <li class="navbar__Vinyl">Vinyl</li>
+        <li class="navbar__Hardware">Hardware</li>
+        <li class="navbar__aboutUs">About us</li>
+        <li class="navbar__cart">
           <svg
             width="20"
             height="19"
@@ -57,15 +58,112 @@
               stroke-linejoin="round"
             />
           </svg>
-        </div>
-      </div>
-    </div>
-
+        </li>
+      </ul>
+    </nav>
     <div class="hero">
       <h1>
         <span>One place <br />for your music needs</span>
       </h1>
     </div>
+    <section class="vinyl">
+      <div class="title-section">
+        <h2><span>New Releases</span></h2>
+      </div>
+      <div class="new-release">
+        <div class="new-release__vinyl">
+          <figure>
+            <img
+              src="./ressources/new-release/bokhar-record.jpg"
+              alt="record1"
+            />
+            <figcaption>
+              Stephen Lopkin - Southside Engineering EP<br />
+              Bokhari Records - BK016
+            </figcaption>
+          </figure>
+        </div>
+        <div class="new-release__vinyl">
+          <figure>
+            <img src="./ressources/new-release/crue-record.jpg" alt="record" />
+            <figcaption>
+              Crue <br />
+              Crue Records - CR06
+            </figcaption>
+          </figure>
+        </div>
+        <div class="new-release__vinyl">
+          <figure>
+            <img
+              src="./ressources/new-release/headhigh-record.jpg"
+              alt="record"
+            />
+            <figcaption>
+              Head High - Medga Trap LP<br />
+              Power House - PH505
+            </figcaption>
+          </figure>
+        </div>
+        <div class="new-release__vinyl">
+          <figure>
+            <img
+              src="./ressources/new-release/stamp-record.jpg"
+              alt="record1"
+            />
+            <figcaption>
+              Lodger - Odoo / Afro Cuts<br />
+              Stamp - STAMP003
+            </figcaption>
+          </figure>
+        </div>
+        <div class="new-release__vinyl">
+          <figure>
+            <img
+              src="./ressources/new-release/voyage-record.jpg"
+              alt="record"
+            />
+            <figcaption>
+              Urulu - Greetings From Namek EP<br />
+              Voyage Record - VYG05
+            </figcaption>
+          </figure>
+        </div>
+        <div class="new-release__vinyl">
+          <figure>
+            <img
+              src="./ressources/new-release/voyage2-record.jpg"
+              alt="record1"
+            />
+            <figcaption>
+              Andy Hart - Mistress in Your Mind EP<br />
+              Voyage Record - VYG06
+            </figcaption>
+          </figure>
+        </div>
+        <div class="new-release__vinyl">
+          <figure>
+            <img src="./ressources/new-release/booW-record.jpg" alt="record1" />
+            <figcaption>
+              Boo Williams - Residual EP<br />
+              Rush Hour - RH-BW1
+            </figcaption>
+          </figure>
+        </div>
+        <div class="new-release__vinyl">
+          <figure>
+            <img
+              src="./ressources/new-release/voyage3-record.jpg"
+              alt="record1"
+            />
+            <figcaption>
+              Various Artist - Voyage Sampler<br />
+              Voyage Records - VYG01
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="hardware"></section>
 
     <script src="./js/main.js"></script>
   </body>

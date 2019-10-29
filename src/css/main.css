@@ -1,25 +1,46 @@
 body {
-  font-family: 'Vollkorn', serif;
-  font-family: 'Lora', serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Vollkorn", serif;
+  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+/*************** GLOBAL SETTINGS ***************/
+:root {
+  --white: white;
+  --blue: rgb(10, 51, 172);
+  --pale-blue: #c7d5ff;
+  --dark-grey: #636a80;
+  --light-black: #323540;
+  --transparent-blue: rgba(65, 105, 225, 0.4);
+  --background-blue: #b2c7e6;
+}
+section {
+  margin: 50px auto;
+  height: 60vh;
+  border-bottom: solid 1px red;
+  position: relative;
 }
 
 h1 {
   font-size: 2rem;
 }
+h2 {
+  font-size: 1.5rem;
+}
 
 /*************** NAVBAR ***************/
 .navbar {
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  background-color: #F8F8FF;
+  font-family: "Roboto", sans-serif;
+  color: var(--blue);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 8vh;
   box-shadow: 0px 10px 15px #dcdcdc;
 }
+
 .navbar__brandbox {
   width: 40%;
   margin: 0 30px;
@@ -38,7 +59,7 @@ h1 {
 
 /*************** HERO ***************/
 .hero {
-  height: 70vh;
+  height: 85vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,19 +69,67 @@ h1 {
   align-items: center;
 }
 
-h1{
-padding-left: 10%;
-padding-bottom: 15%;
+h1 {
+  padding-left: 10%;
+  padding-bottom: 15%;
 }
 h1 > span {
   text-align: right;
-  background-color: rgba(65, 105, 225, 0.4);
-
+  background-color: var(--transparent-blue);
   color: white;
   display: inline;
   line-height: 1.4;
-  padding: 0.2rem; */
+  padding: 0.2rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
 
-  box-decoration-break: clone; */
-  -webkit-box-decoration-break: clone; */
+/*************** SECTION New Release ***************/
+.title-section {
+}
+.vinyl h2 {
+  position: relative;
+  bottom: 90px;
+  right: 20px;
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  font-weight: bold;
+  margin: 0 20px;
+  transform: rotate(-12deg);
+}
+.vinyl h2 span {
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: var(--blue);
+}
+
+/***** Flexbox *****/
+.new-release {
+  margin: 0 30px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.new-release::-webkit-scrollbar {
+  display: none;
+}
+/****** Flex items ******/
+.new-release__vinyl {
+  width: 20vw;
+  margin: 0 25px;
+  flex: 0 0 auto;
+}
+.new-release__vinyl img {
+  object-fit: cover;
+}
+.new-release__vinyl figcaption {
+  color: var(--light-black);
+  padding: 5px;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 10px;
 }
