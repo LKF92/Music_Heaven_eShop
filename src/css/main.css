@@ -20,13 +20,14 @@ body {
 }
 section {
   margin: 80px 0;
-  height: 70vh;
+  min-height: 70vh;
 }
 h2 {
   font-size: 1.8vmax;
 }
 a {
   text-decoration: none;
+  color: var(--blue);
 }
 
 /*************** NAVBAR ***************/
@@ -171,6 +172,7 @@ figcaption {
   margin-bottom: 40px;
   flex: 1 1 35%;
   max-width: 40vw;
+  overflow: hidden;
 }
 figure.hardware__product img {
   height: 400px;
@@ -179,7 +181,7 @@ figure.hardware__product img {
 }
 
 .hardware__product img:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   transition: all 0.3s;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
@@ -201,8 +203,8 @@ figure.hardware__product img {
   flex: 1 1 2rem;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
-
 .cart-btn {
   color: #323540;
   padding: 5px;
@@ -211,4 +213,32 @@ figure.hardware__product img {
 .cart-btn:hover {
   color: white;
   background-color: var(--dark-grey);
+}
+
+/****** SECTION ABOUT US ******/
+section.about-us {
+  margin: -80px 0;
+  height: 100vh;
+  background-image: url(../ressources/recordshop.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us__bloc {
+  padding: 5rem;
+  background-color: rgba(240, 242, 247, 0.7);
+  font-family: "Roboto", sans-serif;
+}
+.about-us__bloc h3 {
+  font-size: 2rem;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+.learn-more-btn {
+  margin: 10px 0;
+  padding: 7px;
+  border: solid 1px var(--light-black);
+  border-radius: 6px;
+  width: fit-content;
 }
