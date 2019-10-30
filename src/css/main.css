@@ -1,31 +1,29 @@
+/*************** GLOBAL SETTINGS ***************/
 body {
   font-family: "Vollkorn", serif;
   font-family: "Lora", serif;
   font-family: "Roboto", sans-serif;
-  background-color: var(--white);
 }
-/*************** GLOBAL SETTINGS ***************/
 :root {
   --white: white;
-  --blue: rgb(10, 51, 172);
+  --blue: #0a33ac;
+  --blue-flash: #0f4bff;
+  --brown: #b38100;
+  --orange: #ffbd0f;
+  --green: #daf7a6;
   --pale-blue: #c7d5ff;
   --dark-grey: #636a80;
+  --light-grey: #f0f2f7;
   --light-black: #323540;
   --transparent-blue: rgba(65, 105, 225, 0.4);
   --background-blue: #b2c7e6;
 }
 section {
-  margin: 50px auto;
-  height: 60vh;
-  border-bottom: solid 1px red;
-  position: relative;
-}
-
-h1 {
-  font-size: 2rem;
+  margin: 80px 0;
+  height: 75vh;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8vmax;
 }
 
 /*************** NAVBAR ***************/
@@ -40,7 +38,6 @@ h2 {
   height: 8vh;
   box-shadow: 0px 10px 15px #dcdcdc;
 }
-
 .navbar__brandbox {
   width: 40%;
   margin: 0 30px;
@@ -50,7 +47,6 @@ h2 {
 .navbar__logo > img {
   max-height: 45px;
 }
-
 .navbar__sectionsbox {
   width: 35%;
   display: flex;
@@ -68,8 +64,8 @@ h2 {
   justify-content: flex-start;
   align-items: center;
 }
-
 h1 {
+  font-size: 2.5vmax;
   padding-left: 10%;
   padding-bottom: 15%;
 }
@@ -84,28 +80,37 @@ h1 > span {
   -webkit-box-decoration-break: clone;
 }
 
-/*************** SECTION New Release ***************/
+/*************** SECTION  ***************/
 .title-section {
+  display: flex;
+  justify-content: space-between;
 }
-.vinyl h2 {
-  position: relative;
-  bottom: 90px;
-  right: 20px;
+.see-more {
+  margin: 0 35px;
+}
+.title-section h2 {
   font-family: "Roboto", sans-serif;
   color: var(--white);
   font-weight: bold;
-  margin: 0 20px;
-  transform: rotate(-12deg);
+  margin: -1px 20px;
+  transform: rotate(-10deg);
 }
-.vinyl h2 span {
-  padding: 6px 10px;
+.title-section h2 span {
+  padding: 10px 10px;
   border-radius: 5px;
   background-color: var(--blue);
 }
-
+.product-detail {
+  color: var(--light-black);
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 10px;
+  border-bottom: 3px solid var(--transparent-blue);
+}
+/***** New Release *****/
 /***** Flexbox *****/
 .new-release {
-  margin: 0 30px;
+  margin: 0 15px;
   padding: 15px;
   display: flex;
   flex-wrap: nowrap;
@@ -118,18 +123,41 @@ h1 > span {
 }
 /****** Flex items ******/
 .new-release__vinyl {
-  width: 20vw;
-  margin: 0 25px;
+  width: 24vw;
+  margin: 0 15px;
   flex: 0 0 auto;
 }
 .new-release__vinyl img {
   object-fit: cover;
 }
-.new-release__vinyl figcaption {
+figcaption {
   color: var(--light-black);
   padding: 5px;
   line-height: 1.2;
   text-align: center;
   font-size: 0.8em;
   margin-top: 10px;
+}
+
+/***** Hardware *****/
+/***** Flexbox *****/
+section.hardware-section {
+}
+.hardware {
+  background-color: var(--light-grey);
+  padding: 15px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+/****** Flex items ******/
+.hardware__product {
+  margin-bottom: 50px;
+  flex: 1 1 40%;
+  max-width: 45vw;
+}
+.hardware__product img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
