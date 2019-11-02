@@ -58,6 +58,10 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.navbar ul li a:hover {
+  padding: 7px 0px;
+  border-bottom: 3px solid var(--transparent-blue);
+}
 
 /*************** PROGRESS BAR ***************/
 progress {
