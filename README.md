@@ -1,4 +1,4 @@
-# Check it [here](wax-attack-eshop.netlify.com)
+# Check it [here](https://wax-attack-eshop.netlify.com/)
 
 ## parcel-postcss
 
